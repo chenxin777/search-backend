@@ -1,15 +1,10 @@
 package com.chenxin.searchbackend.model.vo;
 
-import cn.hutool.json.JSONUtil;
 import com.chenxin.searchbackend.model.entity.Picture;
-import com.chenxin.searchbackend.model.entity.Post;
 import com.google.gson.Gson;
 import lombok.Data;
-import org.springframework.beans.BeanUtils;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -29,5 +24,5 @@ public class SearchVO implements Serializable {
 
     private List<Picture> pictureList;
 
-
+    private List<?> dataList;
 }

@@ -11,6 +11,5 @@ import com.chenxin.searchbackend.model.entity.Picture;
  */
 public interface PictureService {
 
-
     Page<Picture> searchPicture(String searchText, long pageNum, long pageSize);
 }

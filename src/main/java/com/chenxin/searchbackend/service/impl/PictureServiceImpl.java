@@ -40,7 +40,7 @@ public class PictureServiceImpl implements PictureService {
     public Page<Picture> searchPicture(String searchText, long pageNum, long pageSize) {
         long current = (pageNum - 1) * pageSize;
         String url = String.format("https://www.bing.com/images/search?q=%s&qpvt=image&form=IGRE&first=%s&cw=1177&ch=824", searchText, current);
-        Document doc = null;
+        Document doc;
         try {
             doc = Jsoup.connect(url).get();
         } catch (IOException e) {
